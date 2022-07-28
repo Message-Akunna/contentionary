@@ -1,0 +1,35 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: 800 !important;
+}
+h2,
+h3,
+h4 {
+  font-weight: 700 !important;
+}
+h5,
+h6 {
+  font-weight: 600 !important;
+}
+
+/* utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
