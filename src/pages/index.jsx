@@ -168,7 +168,7 @@ function Home() {
                     </Grid>
                 </Container>
             </Box>
-            <Box component="section" sx={{ py: 4 }} className=''>
+            <Box component="section" sx={{ py: 4 }} className='student-learning-section'>
                 <Container maxWidth="lg">
                      <Grid container spacing={2} sx={{ mt: 10 }}>
                         <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }}>
