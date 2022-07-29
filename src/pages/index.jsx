@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 // 
 import HomeLayout from '../components/Layout/Home';
 // 
+import HomeSlider from '../components/Home/HomeSlider';
+// 
 import { 
     Box,
     Grid,
@@ -20,24 +22,14 @@ import {
 import { useTheme } from '@mui/material/styles';
 import { blueGrey, grey, indigo } from '@mui/material/colors';
 // icons
-import UsersIcon from "../assets/images/vector/users.svg";
 import AccessIcon from "../assets/images/vector/access.svg";
 import ChoiceIcon from "../assets/images/vector/choice.svg";
-import CalenderIcon from "../assets/images/vector/calender.svg";
-import ExpertIcon from "../assets/images/vector/file-invoice.svg";
 // images
 import StudentImage from "../assets/images/home/student.png";
 import LearningImage from "../assets/images/home/learning.png";
 import ELearningImage from "../assets/images/home/e-learning.png";
 import AssessmentImage from "../assets/images/home/assessment.png";
 import HeroImage from "../assets/images/hero/header-pic-cropped.png";
-// 
-import UsersWrapImage from "../assets/images/home/users-wrap.svg";
-import TaughtWrapImage from "../assets/images/home/taught-wrap.svg";
-import ReviewWrapImage from "../assets/images/home/review-wrap.svg";
-
-
-const CardClipPath = "polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)";
 
 function Home() {
     const theme = useTheme();
@@ -71,141 +63,8 @@ function Home() {
                     </Grid>
                 </Container>
             </Box>
-            <Box component="section" sx={{ py: 4 }} className=''>
-                <Container maxWidth="lg">
-                    <Typography sx={{ mb: 3}} textAlign="center" component="h2" variant="h4" color="secondary">
-                        Why we are the<br/>
-                        <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary">
-                            Best Online Academy
-                        </Typography> 
-                    </Typography>
-                    <Typography paragraph textAlign="center" color={blueGrey['600']} sx={{ maxWidth: '680px', mb: 5, mx: 'auto', fontSize: "1.25rem" }}>
-                        Students across the country uses our academy to grow and get exposed to relevant IT and soft skills.
-                    </Typography> 
-                    <Grid container spacing={2} sx={{ mt: 10 }}>
-                        <Grid item xs={12} md={4} sx={{ mb: 18 }}>
-                            <Card variant="outlined" sx={{ 
-                                border: 0,
-                                height: "100%", 
-                                overflow: "initial", 
-                                position: "relative",
-                                }}>
-                                <Box sx={{ 
-                                    zIndex: 0,
-                                    inset: "0 -28% -36% -36%",
-                                    position: 'absolute',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: "100% 340px !important",
-                                    backgroundImage: `url(${TaughtWrapImage})`,
-                                 }}></Box>
-                                <CardContent sx={{ px: 6, zIndex: 1, position: "relative" }}>
-                                    <Box sx={{ display: {xs: 'flex', justifyContent: 'center'} }}>
-                                        <Avatar sx={{ 
-                                            width: 70, 
-                                            height: 70,  
-                                            bgcolor: 'secondary.alt', 
-                                        }}>
-                                            <img
-                                                src={ExpertIcon}
-                                                width="auto"
-                                                height="40"
-                                                loading="lazy"
-                                                alt="Contentionary"
-                                            />
-                                        </Avatar>
-                                    </Box>
-                                    <Typography component="h5" textAlign="center" color="secondary" sx={{ mb: 3, mt: 3, fontWeight: 500 }}>
-                                        Taught by experts
-                                    </Typography>
-                                    <Typography paragraph textAlign="center" sx={{ maxWidth: "240px", mx: "auto"  }} color={blueGrey['600']}>
-                                        Courses are taught by experts with many years of IT and teaching experience
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} md={4} sx={{ mb: 18 }}>
-                            <Card variant="outlined" sx={{ 
-                                border: 0,
-                                height: "100%", 
-                                overflow: "initial", 
-                                position: "relative",
-                                }}>
-                                <Box sx={{ 
-                                    zIndex: 0,
-                                    inset: "14% -34% -48% -36%",
-                                    position: 'absolute',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: "100% 320px !important",
-                                    backgroundImage: `url(${ReviewWrapImage})`,
-                                 }}></Box>
-                                <CardContent sx={{ px: 6, zIndex: 1, position: "relative" }}>
-                                    <Box sx={{ display: {xs: 'flex', justifyContent: 'center'} }}>
-                                        <Avatar sx={{ 
-                                            width: 70, 
-                                            height: 70,  
-                                            bgcolor: 'primary.main', 
-                                        }}>
-                                            <img
-                                                src={CalenderIcon}
-                                                width="auto"
-                                                height="40"
-                                                loading="lazy"
-                                                alt="Contentionary"
-                                            />
-                                        </Avatar>
-                                    </Box>
-                                    <Typography component="h5" textAlign="center" color="secondary" sx={{ mb: 3, mt: 3, fontWeight: 500 }}>
-                                        Weekend Live reviews
-                                    </Typography>
-                                    <Typography paragraph textAlign="center" sx={{ maxWidth: "240px", mx: "auto"  }} color={blueGrey['600']}>
-                                        Live classes to answer and interact with tutors and other learners
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                        <Grid item xs={12} md={4} sx={{ mb: 12 }}>
-                            <Card variant="outlined" sx={{ 
-                                border: 0,
-                                height: "100%", 
-                                overflow: "initial", 
-                                position: "relative",
-                                }}>
-                                <Box sx={{ 
-                                    zIndex: 0,
-                                    inset: "0 -20% -36% 0%",
-                                    position: 'absolute',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: "90% 340px !important",
-                                    backgroundImage: `url(${UsersWrapImage})`,
-                                 }}></Box>
-                                <CardContent sx={{ px: 6, zIndex: 1, position: "relative" }}>
-                                    <Box sx={{ display: {xs: 'flex', justifyContent: 'center'} }}>
-                                        <Avatar sx={{ 
-                                            width: 70, 
-                                            height: 70,  
-                                            bgcolor: 'accent.main', 
-                                        }}>
-                                            <img
-                                                src={UsersIcon}
-                                                width="auto"
-                                                height="35"
-                                                loading="lazy"
-                                                alt="Contentionary"
-                                            />
-                                        </Avatar>
-                                    </Box>
-                                    <Typography component="h5" textAlign="center" color="secondary" sx={{ mb: 3, mt: 3, fontWeight: 500 }}>
-                                        Verifiable Certificates
-                                    </Typography>
-                                    <Typography paragraph textAlign="center" sx={{ maxWidth: "240px", mx: "auto"  }} color={blueGrey['600']}>
-                                        Access to online clubs to engage with other learners and compete for prizes
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
+            {/* home slider */}
+            <HomeSlider/>
             <Box component="section" sx={{ py: 4 }} className='student-learning-section'>
                 <Container maxWidth="lg">
                      <Grid container spacing={2} sx={{ mt: 10 }}>
