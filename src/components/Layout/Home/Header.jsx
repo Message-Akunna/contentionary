@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <React.Fragment>
-            <AppBar component="nav" sx={{ position: 'relative', background: "white" }} elevation={0}>
+            <AppBar component="nav" sx={{ position: 'relative', background: "white", pt: 3 }} elevation={0}>
                 <Container maxWidth="lg">
                     <Toolbar disableGutters>
                         <img

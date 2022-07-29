@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -30,11 +31,23 @@ h6 {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 /* home section */
-.student-learning-section{
-    
+.student-learning-section .student-learning-text {
+    overflow: inherit;
+    background-image: url(../images/avatar/ellipse-primary.png),
+        url(../images/avatar/ellipse-primary.png);
+    background-position: top left 0px, top 140px right 20px;
+    background-size: 50px, 20px;
+    background-repeat: no-repeat;
+}
+.student-learning-section .student-learning-image {
+    background-image: url(../images/avatar/rectangle-accent.png),
+        url(../images/avatar/rectangle-primary.png);
+    background-position: top left, bottom right;
+    background-size: 120px, 160px;
+    background-repeat: no-repeat;
 }
