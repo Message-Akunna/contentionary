@@ -28,6 +28,7 @@ const theme = createTheme({
     h1: {
       fontFamily: "Nunito Sans",
       fontWeight: 800,
+      fontSize: "clamp(2rem, -0.875rem + 8.333vw, 3rem)"
     },
     h2: {
       fontFamily: "Poppins",
