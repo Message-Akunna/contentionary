@@ -15,7 +15,7 @@ function Footer() {
   return (
     <Box component="footer" sx={{ py: 4,  bgcolor: 'secondary.dark' }} className='footer'>
         <Container maxWidth="xl">
-            <Box sx={{pb: 4, display: { xs: 'flex', justifyContent: 'space-between',  alignItems: 'center'}}}>
+            <Box sx={{pb: 4, display: { xs: 'flex', justifyContent: 'space-between',  alignItems: 'center', flexWrap: 'wrap'}}}>
                 <img
                     src={ContentionaryLogo}
                     alt="Contentionary"
@@ -23,7 +23,7 @@ function Footer() {
                     width="auto"
                     loading="lazy"
                 />
-                <Button component={Link} to="/#contact-us" sx={{ marginLeft: "10px", boxShadow: 0, color: 'white', borderRadius: '40px', padding: '8px 30px', fontSize: '16px'}}  size="lg" variant="plain">
+                <Button component={Link} to="/#contact-us" sx={{ boxShadow: 0, color: 'white', borderRadius: '40px', padding: '8px 30px', fontSize: '16px', display: {xs: 'none', md: 'block'}}}  size="lg" variant="plain">
                     Contact Us
                 </Button>
             </Box>
