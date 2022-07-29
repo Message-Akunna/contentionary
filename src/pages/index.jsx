@@ -299,7 +299,7 @@ function Home() {
                                 <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary"> Self-Paced </Typography> 
                                 Learning, with access for a year
                             </Typography>
-                            <Grid container spacing={3} sx={{ mt: 4 }} direction="row">
+                            <Grid container spacing={3} sx={{ mt: 3 }} direction="row">
                                 <Grid item xs="auto">
                                     <Avatar sx={{ 
                                         width: 50, 
@@ -317,12 +317,12 @@ function Home() {
                                     </Avatar>
                                 </Grid>
                                 <Grid item xs sx={{ flexGrow: 1 }}>
-                                    <Typography paragraph sx={{ mb: 3, fontSize: 22 }} color={blueGrey['600']}>
+                                    <Typography paragraph sx={{ mb: 0, fontSize: 22 }} color={blueGrey['600']}>
                                        Choose a course of interest and subscribe to it.
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Grid container spacing={3} sx={{ mt: 3 }} direction="row">
+                            <Grid container spacing={3} sx={{ mt: 2 }} direction="row">
                                 <Grid item xs="auto">
                                     <Avatar sx={{ 
                                         width: 50, 
