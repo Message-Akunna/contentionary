@@ -1,10 +1,23 @@
-body,html {
-  overflow-x:hidden !important;
+:root {
+  font-size: calc(
+    14px + (36 - 14) * ((100vw - 640px) / (8800))
+  ) !important;
+}
+
+body,
+html {
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 13px !important;
 }
+/* 
+ mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+*/
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
@@ -40,17 +53,17 @@ h6 {
 
 /* home section */
 .student-learning-section .student-learning-text {
-    overflow: inherit;
-    background-image: url(../images/avatar/ellipse-primary.png),
-        url(../images/avatar/ellipse-primary.png);
-    background-position: top left 0px, top 140px right 20px;
-    background-size: 50px, 20px;
-    background-repeat: no-repeat;
+  overflow: inherit;
+  background-image: url(../images/avatar/ellipse-primary.png),
+    url(../images/avatar/ellipse-primary.png);
+  background-position: top left 0px, top 140px right 20px;
+  background-size: 50px, 20px;
+  background-repeat: no-repeat;
 }
 .student-learning-section .student-learning-image {
-    background-image: url(../images/avatar/rectangle-accent.png),
-        url(../images/avatar/rectangle-primary.png);
-    background-position: top left, bottom right;
-    background-size: 120px, 160px;
-    background-repeat: no-repeat;
+  background-image: url(../images/avatar/rectangle-accent.png),
+    url(../images/avatar/rectangle-primary.png);
+  background-position: top left, bottom right;
+  background-size: 120px, 160px;
+  background-repeat: no-repeat;
 }

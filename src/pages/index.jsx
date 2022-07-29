@@ -47,15 +47,15 @@ function Home() {
                 <Container maxWidth="lg">
                     <Grid container spacing={2} sx={{ alignItems: 'center' }}>
                         <Grid item xs={12} md={6}>
-                            <Typography sx={{ mb: 3}} component="h1" variant="h3" color="secondary">
+                            <Typography sx={{ mb: 3 }} component="h1" variant="h3" color="secondary">
                                 <Typography component="span" fontWeight={'inherit'} variant="h3" color="primary">Welcome</Typography> to <br/>
                                 Gruen Intl School
                             </Typography>
-                            <Typography sx={{ maxWidth: '450px', mb: 3, fontSize: 24 }} color={blueGrey['600']} paragraph>
+                            <Typography sx={{ maxWidth: '450px', mb: 3, fontSize: "1.5rem" }} color={blueGrey['600']} paragraph>
                                 We are the best when it comes online
                                 course content and 
                             </Typography>
-                            <Button component={Link} to="/#get-started" sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '16px'}}  size="lg" variant="contained">
+                            <Button component={Link} to="/#get-started" sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '1rem'}}  size="lg" variant="contained">
                                 Get Started
                             </Button>
                         </Grid>
@@ -64,14 +64,14 @@ function Home() {
                                 src={HeroImage}
                                 alt="Contentionary"
                                 height="auto"
-                                width="80%"
+                                width="100%"
                                 loading="lazy"
                             />
                         </Grid>
                     </Grid>
                 </Container>
             </Box>
-            <Box component="section" sx={{ pt: 4 }} className=''>
+            <Box component="section" sx={{ py: 4 }} className=''>
                 <Container maxWidth="lg">
                     <Typography sx={{ mb: 3}} textAlign="center" component="h2" variant="h4" color="secondary">
                         Why we are the<br/>
@@ -79,11 +79,11 @@ function Home() {
                             Best Online Academy
                         </Typography> 
                     </Typography>
-                    <Typography paragraph textAlign="center" color={blueGrey['600']} sx={{ maxWidth: '680px', mb: 5, mx: 'auto', fontSize: 20 }}>
+                    <Typography paragraph textAlign="center" color={blueGrey['600']} sx={{ maxWidth: '680px', mb: 5, mx: 'auto', fontSize: "1.25rem" }}>
                         Students across the country uses our academy to grow and get exposed to relevant IT and soft skills.
                     </Typography> 
                     <Grid container spacing={2} sx={{ mt: 10 }}>
-                        <Grid item xs={12} md={4} sx={{ mb: 8 }}>
+                        <Grid item xs={12} md={4} sx={{ mb: 12 }}>
                             <Card variant="outlined" sx={{ 
                                 border: 0,
                                 height: "100%", 
@@ -123,7 +123,7 @@ function Home() {
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} md={4} sx={{ mb: 10 }}>
+                        <Grid item xs={12} md={4} sx={{ mb: 14 }}>
                             <Card variant="outlined" sx={{ 
                                 border: 0,
                                 height: "100%", 
@@ -132,10 +132,10 @@ function Home() {
                                 }}>
                                 <Box sx={{ 
                                     zIndex: 0,
-                                    inset: "16% -34% -30% -36%",
+                                    inset: "14% -34% -48% -36%",
                                     position: 'absolute',
                                     backgroundRepeat: 'no-repeat',
-                                    backgroundSize: "100% 300px !important",
+                                    backgroundSize: "100% 360px !important",
                                     backgroundImage: `url(${ReviewWrapImage})`,
                                  }}></Box>
                                 <CardContent sx={{ px: 6, zIndex: 1, position: "relative" }}>
@@ -210,11 +210,12 @@ function Home() {
                 <Container maxWidth="lg">
                      <Grid container spacing={2} sx={{ mt: 10 }}>
                         <Grid item xs={12} md={6} order={{ xs: 2, md: 1 }} className="student-learning-text">
-                            <Typography sx={{ mb: 3, fontWeight: "500 !important"}} component="h2" variant="h4" color="secondary">
-                                <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary">Our Students can now learn top IT Skills, </Typography> 
-                                at their pace and get certified
+                            <Typography sx={{ mb: 3, fontWeight: "500 !important", pl: 4}} component="h2" variant="h4" color="secondary">
+                                Our Students can now learn top IT Skills, <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary">
+                                    at their pace and get certified
+                                </Typography> 
                             </Typography>
-                            <Typography paragraph sx={{ mb: 3, fontSize: 24 }} color={blueGrey['600']}>
+                            <Typography paragraph sx={{ mb: 3, fontSize: "1.5rem",  pl: 4 }} color={blueGrey['600']}>
                                Our Academy allows our students to learn industry relevant IT skills, execute real time projects and get certified upon completion of any program.
                             </Typography>
                         </Grid>
@@ -267,7 +268,7 @@ function Home() {
                         }
                     </Grid>
                     <Box component="div" sx={{ textAlign: 'center' }}>
-                        <Button component={Link} to="/#get-started"  sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '16px'}}  size="lg" color="primary" variant='outlined'>
+                        <Button component={Link} to="/#get-started"  sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '1rem'}}  size="lg" color="primary" variant='outlined'>
                             Get Started
                         </Button>
                     </Box>
@@ -280,7 +281,7 @@ function Home() {
                             Features
                         </Typography> 
                     </Typography>
-                    <Typography sx={{ fontSize: 20}} paragraph textAlign="center" color={blueGrey['600']}>
+                    <Typography sx={{ fontSize: "1.25rem"}} paragraph textAlign="center" color={blueGrey['600']}>
                         What makes Our Academy Unique
                     </Typography>
                     {/*  order={{ xs: 2, md: 1 }} order={{ xs: 1, md: 2 }} */}
@@ -317,7 +318,7 @@ function Home() {
                                     </Avatar>
                                 </Grid>
                                 <Grid item xs sx={{ flexGrow: 1 }}>
-                                    <Typography paragraph sx={{ mb: 0, fontSize: 22 }} color={blueGrey['600']}>
+                                    <Typography paragraph sx={{ mb: 0, fontSize: "1.375rem" }} color={blueGrey['600']}>
                                        Choose a course of interest and subscribe to it.
                                     </Typography>
                                 </Grid>
@@ -340,7 +341,7 @@ function Home() {
                                     </Avatar>
                                 </Grid>
                                 <Grid item xs sx={{ flexGrow: 1 }}>
-                                    <Typography paragraph sx={{ mb: 3, fontSize: 22 }} color={blueGrey['600']}>
+                                    <Typography paragraph sx={{ mb: 3, fontSize: "1.375rem" }} color={blueGrey['600']}>
                                        Access subscribed course anytime in 365 days
                                     </Typography>
                                 </Grid>
@@ -353,7 +354,7 @@ function Home() {
                                 <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary">Get Real-time Practical </Typography> 
                                 after every topic thought
                             </Typography>
-                            <Typography paragraph sx={{ mb: 3, fontSize: 24 }} color={blueGrey['600']}>
+                            <Typography paragraph sx={{ mb: 3, fontSize: "1.5rem" }} color={blueGrey['600']}>
                                 After each topic thought, practicals will be given and assessments will be taken before the next topic will be made available automatically.
                             </Typography>
                         </Grid>
@@ -362,7 +363,7 @@ function Home() {
                                 src={StudentImage}
                                 alt="Contentionary"
                                 height="auto"
-                                width="80%"
+                                width="100%"
                                 loading="lazy"
                             />
                         </Grid>
@@ -373,7 +374,7 @@ function Home() {
                                 src={AssessmentImage}
                                 alt="Contentionary"
                                 height="auto"
-                                width="80%"
+                                width="100%"
                                 loading="lazy"
                             />
                         </Grid>
@@ -382,14 +383,14 @@ function Home() {
                                 Assessments, <Typography component="span" fontWeight={'inherit'} variant="h4" color="primary"> Quizzes</Typography>, Tests, Prep Test
                                 
                             </Typography>
-                            <Typography paragraph sx={{ mb: 3, fontSize: 24 }} color={blueGrey['600']}>
+                            <Typography paragraph sx={{ mb: 3, fontSize: "1.5rem" }} color={blueGrey['600']}>
                                 Each program have assignments, quizzes, and tests.
                                 Student results are automatically graded and certification will be issued for online download.
                             </Typography>
                         </Grid>
                     </Grid>
                     <Box component="div" sx={{ textAlign: 'center', display: { xs: "block", md: "none"} }}>
-                        <Button component={Link} to="/#features"  sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '16px'}}  size="lg" color="primary" variant='outlined'>
+                        <Button component={Link} to="/#features"  sx={{ boxShadow: 0, borderRadius: '40px', padding: '10px 34px', fontSize: '1rem'}}  size="lg" color="primary" variant='outlined'>
                             See more features
                         </Button>
                     </Box>

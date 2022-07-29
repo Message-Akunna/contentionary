@@ -27,7 +27,7 @@ const theme = createTheme({
   typography: {
     h1: {
       fontFamily: "Nunito Sans",
-      fontWeight: 800
+      fontWeight: 800,
     },
     h2: {
       fontFamily: "Poppins",
