@@ -14,7 +14,7 @@ import ContentionaryLogo from "../../../assets/images/logo/logo.svg";
 function Footer() {
   return (
     <Box component="footer" sx={{ py: 4,  bgcolor: 'secondary.dark' }} className='footer'>
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
             <Box sx={{pb: 4, display: { xs: 'flex', justifyContent: 'space-between',  alignItems: 'center', flexWrap: 'wrap'}}}>
                 <img
                     src={ContentionaryLogo}
